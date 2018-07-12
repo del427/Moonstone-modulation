@@ -18,6 +18,7 @@ module.exports = {
         rules:[
             {test:/.less$/,use:['style-loader','css-loader','less-loader']},
             {test:/.jpg|.png$/,use:['url-loader?limit=60&name=/[name].[ext]']},
+            {test:/.mp3$/,use:['file-loader?name=/[name].[ext]']}
         ]
     },
     mode:'development',
