@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            width:100px;
+            height:100px;
+            background-color:red;
+           
+        }
+        .color{
+            animation:move 1000ms linear 1s;
+        }
+        @keyframes move{
+            0%{
+                background-color:red;
+            }50%{
+                background-color:green;
+            }100%{
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <audio src="./呦猫UNEKO - 梦回还.mp3"  autoplay="autoplay"  preload="auto"></audio>
+    <button>oooo</button>
+    <script>
+        var box = document.getElementsByClassName('box')[0];
+        var btn = document.getElementsByTagName('button')[0];
+        btn.onclick = function () {
+            box.classList.add('color')
+        }
+    </script>
+</body>
+</html>
